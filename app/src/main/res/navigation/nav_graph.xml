@@ -7,22 +7,18 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.atakaya.weathercomposeapp.FirstFragment"
+        android:name="com.atakaya.weatherapp.ui.fragments.DashboardFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_dashboard">
 
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.atakaya.weathercomposeapp.SecondFragment"
+        android:name="com.atakaya.weatherapp.ui.fragments.SearchFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_search">
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+
     </fragment>
 </navigation>

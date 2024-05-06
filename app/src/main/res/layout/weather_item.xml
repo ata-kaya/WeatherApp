@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:src="@drawable/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textColor="@color/white"
+        android:textSize="46dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delete" />
+
+    <TextView
+        android:id="@+id/tv_degree_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="°c"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_degree"
+        app:layout_constraintTop_toTopOf="@id/tv_degree" />
+
+    <TextView
+        android:id="@+id/tv_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tehran"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_degree" />
+
+    <TextView
+        android:id="@+id/tv_city_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:45 PM"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_city_name" />
+
+    <ImageView
+        android:id="@+id/iv_weather_icon"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:contentDescription="weather"
+        android:src="@drawable/day_116"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delete" />
+
+    <TextView
+        android:id="@+id/tv_weather_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="partly cloudy"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/iv_weather_icon"
+        app:layout_constraintStart_toStartOf="@id/iv_weather_icon"
+        app:layout_constraintTop_toBottomOf="@id/iv_weather_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
